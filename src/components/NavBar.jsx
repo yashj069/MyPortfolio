@@ -12,10 +12,10 @@ const NavBar = () => {
     <nav
       className={`${styles.flexStart} ${styles.paddingX} w-full py-5 flex flex-row text-white justify-between items-center `}
     >
-      <h1 className="font-bold text-[30px] pr-2 xs:pr-0 xs:block hidden">
+      <h1 className="font-bold text-[30px] pr-2 xs:pr-0 sm:block hidden">
         YASH
       </h1>
-      <h1 className="font-bold text-[30px] xs:pr-0 xs:hidden block">YJ</h1>
+      <h1 className="font-bold text-[30px] xs:pr-0 sm:hidden block">YJ</h1>
       <div className="sm:flex hidden flex-row justify-between text-[24px] gap-6 cursor-pointer">
         <a
           href="#home"
