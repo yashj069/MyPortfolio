@@ -58,7 +58,7 @@ const NavBar = () => {
           </button>
         </a>
         <a href="#contacts">
-          <button className="transition border-white border-[2px] font-semibold hover:bg-white hover:text-black w-[80px] h-[40px] xs:w-[150px] xs:h-[60px] ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+          <button className="hidden xs:block transition border-white border-[2px] font-semibold hover:bg-white hover:text-black w-[80px] h-[40px] xs:w-[150px] xs:h-[60px] ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             <p className="text-[11px] xs:text-[18px]">Let's Connect</p>
           </button>
         </a>

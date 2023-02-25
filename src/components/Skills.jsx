@@ -1,16 +1,11 @@
 import React from "react";
 import styles from "../styles";
-import meter1 from "../assets/meter1.svg";
-import meter2 from "../assets/html5.svg";
-import meter3 from "../assets/meter3.svg";
-import git from "../assets/git-alt.svg";
 import rea from "../assets/react.svg";
 import js from "../assets/js.svg";
-import unity from "../assets/unity.svg";
-import css3 from "../assets/css3-alt.svg";
-import html5 from "../assets/html5.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import unity from "../assets/unity.png";
+import css from "../assets/css.png";
+import html55 from "../assets/html5.png";
+import cpp from "../assets/c++.png";
 const Skills = () => {
   return (
     <section
@@ -30,14 +25,14 @@ const Skills = () => {
           learning new skills.
         </p>
 
-        <div className="flex flex-row flex-wrap flex-1 gap-3 xs:gap-10 items-center">
+        <div className="flex flex-row flex-wrap flex-1 justify-between gap-0 xs:gap-8 items-center">
           <img
-            src={html5}
+            src={html55}
             alt="css"
             className="w-[50px] sm:w-[100px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
           />
           <img
-            src={css3}
+            src={css}
             alt="css"
             className="w-[50px] sm:w-[100px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
           />
@@ -57,7 +52,7 @@ const Skills = () => {
             className="w-[50px] sm:w-[100px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
           />
           <img
-            src={git}
+            src={cpp}
             alt="css"
             className="w-[50px] sm:w-[100px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
           />

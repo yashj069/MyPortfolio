@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles";
 import degen from "../assets/degen.png";
 import happy from "../assets/happy1.jpg";
+import happy1 from "../assets/happy.jpg";
 import gpt3 from "../assets/gpt3.png";
 import theme from "../assets/theme.png";
 import git from "../assets/git.png";
@@ -80,12 +81,12 @@ const Projects = () => {
           </div>
           <div className="flex flex-col sm:flex-row w-full">
             <img
-              src={happy}
+              src={happy1}
               alt="degen"
               className="sm:w-1/2 rounded-2xl transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer bg"
             />
             <div className="flex flex-col items-center sm:w-1/2 gap-4">
-              <h1 className="text-[40px] xs:text-[50px] font-semibold">
+              <h1 className="text-[35px] xs:text-[50px] font-semibold">
                 Happy Community
               </h1>
               <p className="text-[24px] text-center">

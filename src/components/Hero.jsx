@@ -10,7 +10,9 @@ const Hero = () => (
   >
     <div className="flex flex-col sm:flex-row justify-between">
       <div className="flex flex-col justify-between items-center">
-        <h1 className="text-[30px] sm:text-[35px]">Welcome to my Portfolio!</h1>
+        <h1 className="text-[30px] sm:text-[35px] text-center">
+          Welcome to my Portfolio!
+        </h1>
         <h1 className="text-[40px] sm:text-[60px] font-semibold text-center">
           Hi I'm Yash Jindal. I'm a Developer
         </h1>
