@@ -201,13 +201,29 @@
 }
 
 .gradientx {
-  background: rgb(6, 6, 12);
+  /* background: rgb(6, 6, 12);
   background: linear-gradient(
     90deg,
     rgba(6, 6, 12, 1) 0%,
     rgba(5, 20, 38, 1) 37%,
     rgba(14, 40, 50, 1) 75%,
     rgba(22, 47, 52, 1) 100%
+  ); */
+  /* background: rgb(70, 109, 130);
+  background: linear-gradient(
+    90deg,
+    rgba(70, 109, 130, 1) 0%,
+    rgba(84, 114, 144, 1) 37%,
+    rgba(67, 88, 133, 1) 75%,
+    rgba(15, 117, 170, 1) 100%
+  ); */
+  background: rgb(28, 45, 55);
+  background: linear-gradient(
+    90deg,
+    rgba(28, 45, 55, 1) 0%,
+    rgba(38, 53, 68, 1) 37%,
+    rgba(30, 39, 60, 1) 75%,
+    rgba(6, 51, 74, 1) 100%
   );
 }
 

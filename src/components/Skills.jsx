@@ -19,7 +19,7 @@ const Skills = () => {
     >
       <div className="flex flex-col justify-between gap-10 items-center">
         <h1 className="text-[50px] font-semibold">Skills</h1>
-        <p className="text-center w-[70%]">
+        <p className="text-start xs:w-[70%] xs:text-center">
           Having the ability to adapt to changes, keeping team morale up, and
           not giving up when life becomes difficult are some of my key
           strengths. Currently, I'm seeking opportunities that will allow me to
@@ -30,7 +30,7 @@ const Skills = () => {
           learning new skills.
         </p>
 
-        <div className="flex flex-row flex-wrap flex-1 gap-10">
+        <div className="flex flex-row flex-wrap flex-1 gap-3 xs:gap-10 items-center">
           <img
             src={html5}
             alt="css"

@@ -1,21 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles";
 import icon3 from "../assets/nav-icon3.svg";
 import git from "../assets/git.png";
-import { redirect, useNavigate } from "react-router-dom";
+import menu from "../assets/menu.svg";
+import close from "../assets/close.svg";
 
 const NavBar = () => {
-  let navigate = useNavigate();
-  const linkedinHandler = () => {
-    let path = `https://www.linkedin.com/in/yash-jindal-046321192/`;
-    <a href={path}></a>;
-  };
+  const [toggle, setToggle] = useState(false);
 
   return (
     <nav
       className={`${styles.flexStart} ${styles.paddingX} w-full py-5 flex flex-row text-white justify-between items-center `}
     >
-      <h1 className="font-bold text-[30px] pr-2 xs:pr-0">YASH</h1>
+      <h1 className="font-bold text-[30px] pr-2 xs:pr-0 xs:block hidden">
+        YASH
+      </h1>
+      <h1 className="font-bold text-[30px] xs:pr-0 xs:hidden block">YJ</h1>
       <div className="sm:flex hidden flex-row justify-between text-[24px] gap-6 cursor-pointer">
         <a
           href="#home"
@@ -36,7 +36,8 @@ const NavBar = () => {
           Projects
         </a>
       </div>
-      <div className="flex flex-row gap-4 items-center">
+
+      <div className="flex flex-row gap-2 xs:gap-4 items-center">
         <a
           href="https://www.linkedin.com/in/yash-jindal-046321192/"
           target="_blank"
@@ -58,9 +59,29 @@ const NavBar = () => {
         </a>
         <a href="#contacts">
           <button className="transition border-white border-[2px] font-semibold hover:bg-white hover:text-black w-[80px] h-[40px] xs:w-[150px] xs:h-[60px] ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-            <p className="text-[10px] xs:text-[18px]">Let's Connect</p>
+            <p className="text-[11px] xs:text-[18px]">Let's Connect</p>
           </button>
         </a>
+      </div>
+      <div className="sm:hidden flex justify-end items-center">
+        <img
+          src={toggle ? close : menu}
+          alt="menu"
+          className="w-[28px] h-[28px] object-contain"
+          onClick={() => setToggle((prev) => !prev)}
+        />
+
+        <div
+          className={`${toggle ? "flex" : "hidden"}
+        p-6 bg-black-gradient absolute top-20 right-0 mx-4
+        my-2 min-w-[140px] rounded-xl sidebar`}
+        >
+          <ul className="list-none flex text-[20px] flex-col justify-end items-center cursor-pointer">
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+          </ul>
+        </div>
       </div>
     </nav>
   );

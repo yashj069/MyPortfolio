@@ -6,7 +6,7 @@ import git from "../assets/git.png";
 const Footer = () => {
   return (
     <div
-      className={`flex flex-col justify-between sm:flex-row items-center ${styles.paddingY} ${styles.paddingX} text-white`}
+      className={`flex flex-col gap-4 justify-between sm:flex-row items-center ${styles.paddingY} ${styles.paddingX} text-white`}
     >
       {/* <div> */}
       <h1 className="font-bold text-[50px]">YASH</h1>

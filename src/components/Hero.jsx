@@ -24,19 +24,20 @@ const Hero = () => (
           <br />
         </p>
         <a href="#contacts">
-          <h2 className="flex flex-row gap-4 items-center font-semibold text-[34px] animate-bounce mt-10">
+          <h2 className="flex flex-row gap-4 items-center mt-4 font-semibold text-[34px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
             Let's Connect
             <img
               src={dash1}
               alt="arrow"
               className="w-[40px] h-[40px] mt-2 bg-white rounded-full"
             />
-            {/* <img src={dash} alt="arrow" className="w-[20px]" />
-            <img src={arrow} alt="arrow" className="w-[20px]" /> */}
           </h2>
         </a>
       </div>
-      <img src={meter} className="sm:w-1/3 floatimg mb-20 object-contain" />
+      <img
+        src={meter}
+        className="sm:w-1/3 floatimg mt-8 xs:mt-0 object-contain"
+      />
     </div>
   </section>
 );

@@ -6,7 +6,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contacts = () => {
-  // toast.configure();
   const form = useRef();
 
   const [fname, setfname] = useState("");
@@ -58,52 +57,53 @@ const Contacts = () => {
       className={` skillsgradient ${styles.flexCenter} ${styles.paddingY} ${styles.paddingX} w-full text-white`}
     >
       <ToastContainer />
-      <div className="flex flex-col sm:flex-row gap-20">
+      <div className="flex flex-col sm:flex-row gap-10 xs:gap-20">
         <img src={contactimg} alt="contacts" className="w-1/2 ml-24 sm:ml-0" />
         <div className="flex flex-col">
           <h1 className="font-bold text-[40px] text-center">Get in Touch</h1>
           <div className="flex flex-col justify-between mt-10 items-center">
             <form
-              className="flex flex-col gap-2"
+              className="flex flex-col gap-2 items-center"
               ref={form}
               onSubmit={sendEmail}
             >
-              <div className="flex flex-row gap-4 ">
+              <div className="flex flex-col xs:flex-row justify-between gap-2 xs:gap-4 items-center">
                 <input
                   placeholder="First Name"
                   type="text"
                   name="fname"
                   onChange={fnameHandler}
-                  className="rounded-2xl h-[60px] pl-10 bg-transparent border-[2px] placeholder:text-white border-white"
+                  className="rounded-2xl w-[120%] xs:w-full h-[60px] pl-10 bg-transparent border-[2px] placeholder:text-white border-white"
                 ></input>
                 <input
                   placeholder="Last Name"
                   type="text"
                   name="lname"
-                  className="rounded-2xl h-[60px] pl-10 bg-transparent border-[2px] placeholder:text-white border-white"
+                  className="rounded-2xl w-[120%] xs:w-full h-[60px] pl-10 bg-transparent border-[2px] placeholder:text-white border-white"
                 ></input>
               </div>
-              <div className="flex flex-row gap-4 ">
+              <div className="flex flex-col xs:flex-row justify-between gap-2 xs:gap-4 items-center">
                 <input
                   placeholder="Email Address"
                   type="email"
                   name="email"
-                  className="rounded-2xl h-[60px] pl-10 bg-transparent border-[2px] placeholder:text-white border-white"
+                  className="rounded-2xl w-[120%] xs:w-full h-[60px] pl-10 bg-transparent border-[2px] placeholder:text-white border-white"
                 ></input>
                 <input
                   placeholder="Phone No."
                   type="number"
                   name="phone"
-                  className="rounded-2xl h-[60px] pl-10 bg-transparent border-[2px] placeholder:text-white border-white"
+                  className="rounded-2xl w-[120%] xs:w-full  h-[60px] pl-10 bg-transparent border-[2px] placeholder:text-white border-white"
                 ></input>
               </div>
               <input
                 placeholder="Message"
                 name="msg"
                 onChange={msgHandler}
-                className="rounded-2xl h-[150px] pl-10 bg-transparent border-[2px] placeholder:text-white border-white"
+                className="rounded-2xl h-[150px] w-[120%] xs:w-full pl-10 bg-transparent border-[2px] placeholder:text-white border-white"
               ></input>
-              <div className="text-center sm:text-start">
+
+              <div className="flex flex-col xs:flex-row items-center gap-4 w-full px-2">
                 <button
                   type="submit"
                   value="send"
