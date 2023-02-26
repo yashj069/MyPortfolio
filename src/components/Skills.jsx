@@ -25,37 +25,41 @@ const Skills = () => {
           learning new skills.
         </p>
 
-        <div className="flex flex-row flex-wrap flex-1 justify-between gap-0 xs:gap-8 items-center">
-          <img
-            src={html55}
-            alt="css"
-            className="w-[50px] sm:w-[100px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
-          />
-          <img
-            src={css}
-            alt="css"
-            className="w-[50px] sm:w-[100px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
-          />
-          <img
-            src={js}
-            alt="css"
-            className="w-[50px] sm:w-[100px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
-          />
-          <img
-            src={rea}
-            alt="css"
-            className="w-[50px] sm:w-[100px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
-          />
-          <img
-            src={unity}
-            alt="css"
-            className="w-[50px] sm:w-[100px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
-          />
-          <img
-            src={cpp}
-            alt="css"
-            className="w-[50px] sm:w-[100px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
-          />
+        <div className="flex flex-col xs:flex-row flex-wrap flex-1 justify-between gap-4 xs:gap-8 items-center">
+          <div className="flex flex-row gap-10">
+            <img
+              src={html55}
+              alt="css"
+              className="w-[50px] sm:w-[100px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+            />
+            <img
+              src={css}
+              alt="css"
+              className="w-[50px] sm:w-[100px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+            />
+            <img
+              src={js}
+              alt="css"
+              className="w-[50px] sm:w-[100px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+            />
+          </div>
+          <div className="flex flex-row gap-10">
+            <img
+              src={rea}
+              alt="css"
+              className="w-[50px] sm:w-[100px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+            />
+            <img
+              src={unity}
+              alt="css"
+              className="w-[60px] sm:w-[110px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+            />
+            <img
+              src={cpp}
+              alt="css"
+              className="w-[50px] sm:w-[100px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+            />
+          </div>
         </div>
       </div>
     </section>

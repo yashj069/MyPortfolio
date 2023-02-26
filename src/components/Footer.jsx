@@ -31,8 +31,7 @@ const Footer = () => {
           </button>
         </a>
       </div>
-      {/* </div> */}
-      <h2>Copyright 2023. All Rights Reserved.</h2>
+      <p className="text-[22px]">Made with ❤️ by Yash.</p>
     </div>
   );
 };
