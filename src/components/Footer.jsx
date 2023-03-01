@@ -31,7 +31,7 @@ const Footer = () => {
           </button>
         </a>
       </div>
-      <p className="text-[22px]">Made with ❤️ by Yash.</p>
+      <p className="text-[22px]">Made with ❤️ by Yash</p>
     </div>
   );
 };

@@ -29,7 +29,7 @@ const Projects = () => {
               <h1 className="text-[40px] xs:text-[50px] font-semibold">
                 Degen Run
               </h1>
-              <p className="text-[24px] text-center">
+              <p className="text-[24px] text-center sm:w-[80%]">
                 Degen Run is a Web Game. Made with Unity3D and C# for scripting.
               </p>
               <div className="flex flex-row gap-4">
@@ -52,7 +52,7 @@ const Projects = () => {
               <h1 className="text-[40px] xs:text-[50px] font-semibold">
                 GPT-3
               </h1>
-              <p className="text-[24px] text-center">
+              <p className="text-[24px] text-center sm:w-[80%]">
                 GPT-3 is a Modern UI/UX Website. Made with ReactJS and
                 TailwindCSS.
               </p>
@@ -89,7 +89,7 @@ const Projects = () => {
               <h1 className="text-[35px] xs:text-[50px] font-semibold">
                 Happy Community
               </h1>
-              <p className="text-[24px] text-center">
+              <p className="text-[24px] text-center sm:w-[80%]">
                 Happy Community is a website to bring people closer via
                 different Communities. Made with React.
               </p>
@@ -119,7 +119,7 @@ const Projects = () => {
               <h1 className="text-[40px] xs:text-[50px] font-semibold">
                 Theme Switcher
               </h1>
-              <p className="text-[24px] text-center">
+              <p className="text-[24px] text-center sm:w-[80%]">
                 TTheme Switcher is a Chrome Extension that will turn the current
                 tab to dark mode if the page is already in light mode vica
                 verca.
