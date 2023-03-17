@@ -1,13 +1,10 @@
 import React from "react";
 import styles from "../styles";
 import degen from "../assets/degen.png";
-import happy from "../assets/happy1.jpg";
 import happy1 from "../assets/happy.jpg";
-import gpt3 from "../assets/gpt3.png";
 import theme from "../assets/theme.png";
 import git from "../assets/git.png";
 import metaverse from "../assets/metaverse2.png";
-import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
