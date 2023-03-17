@@ -6,6 +6,8 @@ import happy1 from "../assets/happy.jpg";
 import gpt3 from "../assets/gpt3.png";
 import theme from "../assets/theme.png";
 import git from "../assets/git.png";
+import metaverse from "../assets/metaverse2.png";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -35,7 +37,7 @@ const Projects = () => {
               <div className="flex flex-row gap-4">
                 <a href="https://degenrun.com/" target="_blank">
                   <button className="rounded-md transition border-white border-[2px] font-semibold hover:bg-white hover:text-black w-[150px] h-[60px] ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-                    DEMO
+                    LIVE
                   </button>
                 </a>
                 <a href="https://github.com/yashj069/DegenRun4" target="_blank">
@@ -47,7 +49,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col-reverse sm:flex-row w-full">
+          {/* <div className="flex flex-col-reverse sm:flex-row w-full">
             <div className="flex flex-col items-center sm:w-1/2 gap-4">
               <h1 className="text-[40px] xs:text-[50px] font-semibold">
                 GPT-3
@@ -78,6 +80,40 @@ const Projects = () => {
               alt="degen"
               className="sm:w-1/2 rounded-2xl transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer"
             />
+          </div> */}
+          <div className="flex flex-col-reverse sm:flex-row w-full">
+            <div className="flex flex-col items-center sm:w-1/2 gap-4 py-0 sm:py-10">
+              <h1 className="text-[40px] xs:text-[50px] font-semibold">
+                METAVERSE
+              </h1>
+              <p className="text-[24px] text-center sm:w-[80%]">
+                METAVERSE is a Modern Next 13 Website With Framer Motion &
+                Tailwind CSS.
+              </p>
+              <div className="flex flex-row gap-4">
+                <a
+                  href="https://metaverse-yashj069.vercel.app/"
+                  target="_blank"
+                >
+                  <button className="rounded-md transition border-white border-[2px] font-semibold hover:bg-white hover:text-black w-[150px] h-[60px] ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                    LIVE
+                  </button>
+                </a>
+                <a href="https://github.com/yashj069/metaverse" target="_blank">
+                  <button className="rounded-md transition border-white border-[2px] font-semibold hover:bg-white hover:text-black w-[150px] h-[60px] ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                    <img src={git} className="w-[25px] absolute ml-6" />
+                    <h1 className="ml-2 text-center">CODE</h1>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <img
+              src={metaverse}
+              alt="degen"
+              href="https://metaverse-yashj069.vercel.app/"
+              className="sm:w-1/2 rounded-2xl transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer"
+            />
           </div>
           <div className="flex flex-col sm:flex-row w-full">
             <img
@@ -99,7 +135,7 @@ const Projects = () => {
                   target="_blank"
                 >
                   <button className="rounded-md transition border-white border-[2px] font-semibold hover:bg-white hover:text-black w-[150px] h-[60px] ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-                    DEMO
+                    LIVE
                   </button>
                 </a>
                 <a
@@ -127,7 +163,7 @@ const Projects = () => {
               <div className="flex flex-row gap-4">
                 <a>
                   <button className="rounded-md transition border-white border-[2px] font-semibold hover:bg-white hover:text-black w-[150px] h-[60px] ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-                    DEMO
+                    LIVE
                   </button>
                 </a>
                 <a
@@ -148,57 +184,6 @@ const Projects = () => {
             />
           </div>
         </div>
-
-        {/* <div className="flex flex-row flex-wrap justify-between gap-4 ml-10 sm:ml-0">
-          <div class="max-w-sm rounded overflow-hidden  shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
-            <img class="w-full" src={degen} alt="img1" />
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2 text-center">Degen Run</div>
-              <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                exercitationem praesentium nihil.
-              </p>
-            </div>
-          </div>
-          <div class="max-w-sm rounded overflow-hidden shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
-            <img class="w-full h-[50%]" src={gpt3} alt="img1" />
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2 text-center">GPT-3</div>
-              <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                exercitationem praesentium nihil.
-              </p>
-            </div>
-          </div>
-          <div class="max-w-sm rounded overflow-hidden shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
-            <img class="w-full h-[50%]" src={happy} alt="img1" />
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2 text-center">
-                Happy Community
-              </div>
-              <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                exercitationem praesentium nihil.
-              </p>
-            </div>
-          </div>
-          <div class="max-w-sm rounded overflow-hidden shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
-            <img class="w-full h-[50%]" src={theme} alt="img1" />
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2 text-center">
-                Theme Switcher
-              </div>
-              <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                exercitationem praesentium nihil.
-              </p>
-            </div>
-          </div>
-        </div> */}
       </div>
     </section>
   );
