@@ -16,7 +16,7 @@ const Projects = () => {
         <h1 className="text-[50px] font-semibold">Projects</h1>
 
         <div
-          className={`flex flex-col justify-between items-center gap-20 xs:gap-40 ${styles.paddingY}`}
+          className={`flex flex-col justify-between items-center gap-20 ${styles.paddingY}`}
         >
           <div className="flex flex-col sm:flex-row w-full">
             <img
