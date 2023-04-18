@@ -227,6 +227,19 @@
   );
 }
 
+.projectgradient {
+  /* background: linear-gradient(
+    109.6deg,
+    rgb(5, 85, 84) 11.2%,
+    rgb(64, 224, 208) 91.1%
+  ); */
+  background: radial-gradient(
+    939px at 94.7% 50%,
+    rgb(0, 178, 169) 0%,
+    rgb(0, 106, 101) 76.9%
+  );
+}
+
 .contactgradient {
   background: rgb(199, 76, 207);
   background: linear-gradient(

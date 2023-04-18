@@ -8,7 +8,6 @@ const Footer = () => {
     <div
       className={`flex flex-col gap-4 justify-between sm:flex-row items-center ${styles.paddingY} ${styles.paddingX} text-white`}
     >
-      {/* <div> */}
       <h1 className="font-bold text-[50px]">YASH</h1>
       <div className="flex flex-row gap-4 items-center">
         <a
@@ -24,6 +23,11 @@ const Footer = () => {
             src={git}
             className=" w-[38px] h-[38px] ml-1 bg-white rounded-full transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
           />
+        </a>
+        <a href="https://twitter.com/yashj_069" target="_blank">
+          <div className="flex items-center justify-center border-[2px] rounded-full h-[38px] w-[38px] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+            <i class="fa-brands fa-twitter fa-lg"></i>
+          </div>
         </a>
         <a href="https://www.instagram.com/yashjindal09/" target="_blank">
           <button className="border-white border-[2px] rounded-full hover:bg-black w-[38px] h-[38px] items-center pl-1 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">

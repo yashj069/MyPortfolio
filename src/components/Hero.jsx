@@ -19,10 +19,9 @@ const Hero = () => (
         <p className="text-[16px] sm:text-[22px] leading-[28px] xs:leading-[33px] text-start ">
           I am a Final Year undergrad pursuing B.Tech in Computer Science from
           LNMIIT. I am passionate about technology and love to keep updated with
-          the latest technology trends. I have an interest in problem-solving
-          and developing modern websites. I am currently developing modern UI/UX
-          website using ReactJS and TailwindCSS. I am also quite experienced in
-          game designing.
+          the latest technology trends. I am currently developing modern UI/UX
+          website using React.js, Next.js and TailwindCSS. I am also experienced
+          in game designing.
           <br />
         </p>
         <div className="flex flex-col-reverse sm:flex-row justify-center items-center sm:gap-10">

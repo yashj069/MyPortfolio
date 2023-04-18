@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className={`flex text-white checkgradient ${styles.paddingX} ${styles.paddingY} w-full`}
+      className={`flex text-white projectgradient ${styles.paddingX} ${styles.paddingY} w-full`}
     >
       <div className="flex flex-col justify-between gap-10 items-center">
         <h1 className="text-[50px] font-semibold">Projects</h1>
