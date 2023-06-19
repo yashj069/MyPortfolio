@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import emailjs, { send } from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import styles from "../styles";
 import contactimg from "../assets/contact-img.svg";
 import { ToastContainer, toast } from "react-toastify";
@@ -11,7 +11,6 @@ const Contacts = () => {
   const [fname, setfname] = useState("");
   const [msg, setmsg] = useState("");
   const [err, seterr] = useState("");
-  const [errmsg, seterrmsg] = useState(false);
 
   const fnameHandler = (e) => {
     e.preventDefault();
@@ -37,7 +36,6 @@ const Contacts = () => {
       )
       .then(
         (result) => {
-          // console.log(result.text);
           e.target.reset();
           toast.success("Sent Successfully");
           seterr("");
